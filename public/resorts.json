@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Sarah Resort",
+        "area": "About 260km Wide Area",
+        "booked": "Booked 350times in last 24 hours",
+        "description": "Sarah Resort is a unique resort with modern facilities which is situated at Rajabari in Gazipur.It includes Water sports, cycling, boating.",
+        "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/sarah-resort-768x514.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Bhawal Resort",
+        "area": "About 260km Wide Area",
+        "booked": "Booked 350times in last 24 hours",
+        "description": "Bhawal Resort is an elegant resort surrounded by rain forest which is located at Gazipur, Dhaka. It is an exotic resort with 61 cottages.",
+        "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/bhawal-resort-and-spa-768x432.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Rajendra Eco Resort",
+        "area": "About 260km Wide Area",
+        "booked": "Booked 350times in last 24 hours",
+        "description": "Rajendra Eco Resort & Village is one of the largest resorts in Bangladesh with 57 cottages and 100 room which is situated at Bhabanipur Bazar, Gazipur, Dhaka.",
+        "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/rajendra-eco-resort.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Neel Komol Resort",
+        "area": "About 260km Wide Area",
+        "booked": "Booked 350times in last 24 hours",
+        "description": "Neel Komol Resort is a resort of noiseless calm beauty where you can hear the racket of the firefly in the evening and it is not very far from Dhaka too.",
+        "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/neel-komol-resort-768x512.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Lakeshore Resort",
+        "area": "About 260km Wide Area",
+        "booked": "Booked 350times in last 24 hours",
+        "description": "Lakeshore Resort is situated on the bank of Kaptai lake, one of most spectacular lakes in Bangladesh which is encompassed by the dignified hill tracks.",
+        "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/lakeshore-resort.png"
+    },
+    {
+        "id": 6,
+        "name": "Dhaka Resort",
+        "area": "About 260km Wide Area",
+        "booked": "Booked 350times in last 24 hours",
+        "description": "Dhaka Resort is one of the best resorts in Bangladesh that is famous for beautiful Bhawal Ghor and rain forest which is established at Gazipur, Dhaka.",
+        "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/dhaka-resort-1-768x571.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Jamuna Resort",
+        "area": "About 260km Wide Area",
+        "booked": "Booked 350times in last 24 hours",
+        "description": "Jamuna Resort is a resort where you can feel the exotic environment with gorgeous decorations. It’s a model resort with a combination of a romantic and familial atmosphere.",
+        "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/jamuna-resort.jpg"
+    },
+    {
+        "id": 8,
+        "name": "The Third Terrace",
+        "area": "About 260km Wide Area",
+        "booked": "Booked 350times in last 24 hours",
+        "description": "The Third Terrace is a beautiful resort, situated at Gazipur on 3 acres of land where you can make a family trip as well as business travel.",
+        "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/third-terrace-resorts.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Mawa Resort",
+        "area": "About 260km Wide Area",
+        "booked": "Booked 350times in last 24 hours",
+        "description": "If you want to expand your holiday in a beyond reproach beautiful place the Mawa Resort will be the perfect one for you and will suit your pocket also.",
+        "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/mawa-resort-768x429.jpg"
+    }
+]

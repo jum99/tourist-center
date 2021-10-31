@@ -1,0 +1,15 @@
+.loginText {
+    transition: 0.4s;
+  }
+  .loginStyle:hover {
+    background-color: orange !important;
+    transition: 0.4s;
+  }
+  .loginStyle:hover .loginText {
+    color: #fff !important;
+    transition: 0.4s;
+  }
+  .sign-btn {
+    background-color: #ffa500 !important;
+  }
+  
