@@ -7,7 +7,7 @@ const AllResorts = () => {
     const [isLoading, setIsLoading] = useState(false);
     useEffect(() => {
         axios
-            .get("http://localhost:5000/allResorts")
+            .get("https://polar-sea-22430.herokuapp.com/allResorts")
             .then((result) => {
                 console.log(result.data);
                 setBookedResort(result.data);
@@ -21,7 +21,7 @@ const AllResorts = () => {
         if (proceed) {
             axios
                 .delete(
-                    `http://localhost:5000/deleteResort/${id}`
+                    `https://polar-sea-22430.herokuapp.com/${id}`
                 )
                 .then((result) => {
                     console.log(result);

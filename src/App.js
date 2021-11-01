@@ -16,63 +16,73 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import ManageAllBookings from "./components/ManageAllBookings/ManageAllBookings";
 import AllResorts from "./components/AllResorts/AllResorts";
 import About from "./components/About/About";
+import Resorts from "./components/Resorts/Resorts";
+
+
+
 
 
 function App() {
+
+
   return (
-    <div className="App">
-      <AuthProvider>
-        <BrowserRouter>
-          <Header></Header>
-          <Switch>
-            <Route exact path="/">
-              <Home></Home>
-            </Route>
-            <Route path="/home">
-              <Home></Home>
-            </Route>
-            <Route path="/about">
-              <About></About>
-            </Route>
 
 
-            <Route path="/myBookings">
-              <MyBookings></MyBookings>
-            </Route>
-            <PrivateRoute path="/booking/:id">
-              <Booking></Booking>
-            </PrivateRoute>
+    <AuthProvider>
 
-            <Route path="/contact">
-              <Contact></Contact>
-            </Route>
-            <Route path="/manageAllBookings">
-              <ManageAllBookings></ManageAllBookings>
-            </Route>
-            <Route path="/admin">
-              <Admin></Admin>
-            </Route>
-            <Route path="/addANewService">
-              <AddANewService></AddANewService>
-            </Route>
-            <Route path="/allResorts">
-              <AllResorts></AllResorts>
-            </Route>
-            <Route path="/login">
-              <Login></Login>
-            </Route>
-            <Route path="/signup">
-              <Signup></Signup>
-            </Route>
+      <BrowserRouter>
+        <Header></Header>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
+          <Route path="/resorts">
+            <Resorts></Resorts>
+          </Route>
 
-            <Route path="*">
-              <NotFound></NotFound>
-            </Route>
-          </Switch>
-          <Footer></Footer>
-        </BrowserRouter>
-      </AuthProvider>
-    </div>
+          <Route path="/myBookings">
+            <MyBookings></MyBookings>
+          </Route>
+          <PrivateRoute path="/booking/:id">
+            <Booking></Booking>
+          </PrivateRoute>
+
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="/manageAllBookings">
+            <ManageAllBookings></ManageAllBookings>
+          </Route>
+          <Route path="/admin">
+            <Admin></Admin>
+          </Route>
+          <Route path="/addANewService">
+            <AddANewService></AddANewService>
+          </Route>
+          <Route path="/allResorts">
+            <AllResorts></AllResorts>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/signup">
+            <Signup></Signup>
+          </Route>
+
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+        <Footer></Footer>
+      </BrowserRouter>
+    </AuthProvider>
+
   );
 }
 

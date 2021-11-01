@@ -7,11 +7,10 @@ import { useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 const Login = () => {
     const {
-        handleUserGoogleLogIn,
         setUser,
+        error,
         setError,
         handleUserSignInWithEmail,
-        error,
     } = useAuth();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState();
@@ -19,36 +18,24 @@ const Login = () => {
     const history = useHistory();
     const redirect_uri = location.state?.from || "/home";
 
-    // Handle User Login With Google and Redirect
-
-    const handleGoogleSignIn = () => {
-        handleUserGoogleLogIn()
-            .then((result) => {
-                setUser(result.user);
-                history.push(redirect_uri);
-            })
-            .catch((error) => {
-                setError(error.message);
-            });
-    };
-
-    // Get and Set User Email
+    //   Get and Set User Email
     const handleEmail = (e) => {
         setEmail(e.target.value);
     };
 
-    // Get and Set User Password
+    //   Get and Set User Password
     const handlePassword = (e) => {
         setPassword(e.target.value);
     };
 
-    // Handle User Login With Email and Password
+    //   Handle User Login With Email and Password
     const handleLoginWithEmail = (e) => {
         e.preventDefault();
         handleUserSignInWithEmail(email, password)
             .then((result) => {
                 setUser(result.user);
                 history.push(redirect_uri);
+                setError('');
             })
             .catch((error) => {
                 setError(error.message);
@@ -80,9 +67,10 @@ const Login = () => {
                         required
                     />
                 </Form.Group>
+                <div className="mb-3 mt-4 text-danger">{error}</div>
                 <Button
                     className="loginBtn mt-4 text-white border-0"
-                    // variant="warning"
+                    variant="warning"
                     type="submit"
                 >
                     Log in
@@ -96,21 +84,7 @@ const Login = () => {
                     </Link>
                 </p>
             </Form>
-            <div>
-                <h5 className="orStyle text-center">or continue with</h5>
-                <div className="text-center mt-1">
-                    <Button
-                        onClick={handleGoogleSignIn}
-                        className="bg-primary border-0 mx-1 p-0 link-btn"
-                    >
-                        {" "}
 
-                        Google log in
-                    </Button>
-
-                    <p className="text-danger my-3"> {error}</p>
-                </div>
-            </div>
         </div>
     );
 };

@@ -11,7 +11,7 @@ const AddANewService = () => {
     } = useForm();
     const onSubmit = (data) => {
         axios
-            .post("http://localhost:5000/addResorts", data)
+            .post("https://polar-sea-22430.herokuapp.com/addResorts", data)
             .then((result) => {
                 if (result.data.insertedId) {
                     alert("Successfully Event Added");

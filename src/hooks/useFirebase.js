@@ -1,8 +1,7 @@
 import initializeAuthentication from "../components/Firebase/firebase.init";
 import {
     getAuth,
-    signInWithPopup,
-    GoogleAuthProvider,
+
     updateProfile,
     signOut,
     signInWithEmailAndPassword,
@@ -16,24 +15,25 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState("");
     const [userName, setUserName] = useState("");
+    const [userEmail, setUserEmail] = useState("");
     const [isLoading, setIsLoading] = useState(true);
-    const googleProvider = new GoogleAuthProvider();
-    const auth = getAuth();
-    //----- Log in with Google ------
-    const handleUserGoogleLogIn = () => {
-        return signInWithPopup(auth, googleProvider);
-    };
 
-    //----- Register with Email Password-----
+    const auth = getAuth();
+
+
+
+    //  ----- Register with Email Password-----
     const handleUserRegisterWithEmail = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password);
+
+
     };
 
-    // Sign in With Email Password
+    //   Sign in With Email Password
     const handleUserSignInWithEmail = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password);
     };
-    // Observe User State
+    //   Observe User State
 
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, (user) => {
@@ -45,15 +45,15 @@ const useFirebase = () => {
             setIsLoading(false);
         });
         return () => unsubscribed;
-    }, []);
-    // Sign Out
+    }, [auth]);
+    //   Sign Out
     const handleUserLogOut = () => {
         signOut(auth).then((result) => {
             setUser({});
         });
     };
     return {
-        handleUserGoogleLogIn,
+
         handleUserSignInWithEmail,
         handleUserRegisterWithEmail,
         handleUserLogOut,
@@ -63,6 +63,8 @@ const useFirebase = () => {
         auth,
         userName,
         setUserName,
+        userEmail,
+        setUserEmail,
         isLoading,
         user,
         error,

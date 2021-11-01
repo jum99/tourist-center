@@ -1,18 +1,18 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row, Button, Card } from "react-bootstrap";
-import useAuth from "../../hooks/useAuth";
+// import useAuth from "../../hooks/useAuth";
 import { BsFillBookmarkFill } from "react-icons/bs";
 
 import "./Resorts.css";
 import { Link } from "react-router-dom";
 const Resorts = () => {
     const [resorts, setResorts] = useState([]);
-    const { user } = useAuth();
+    // const { user } = useAuth();
 
     useEffect(() => {
         axios
-            .get("http://localhost:5000/allResorts")
+            .get("https://polar-sea-22430.herokuapp.com/allResorts")
             .then((result) => {
                 const data = result.data;
                 setResorts(data);

@@ -10,7 +10,7 @@ const MyBookings = () => {
     useEffect(() => {
         axios
             .get(
-                ` http://localhost:5000/myBookings/${user?.email}`
+                `https://polar-sea-22430.herokuapp.com/myBookings/${user?.email}`
             )
             .then((result) => setBookings(result?.data));
     }, [user.email, isLoading]);
@@ -23,7 +23,7 @@ const MyBookings = () => {
         if (proceed) {
             axios
                 .delete(
-                    `http://localhost:5000/deleteBooking/${id}`
+                    `https://polar-sea-22430.herokuapp.com/deleteBooking/${id}`
                 )
                 .then((result) => {
                     console.log(result);

@@ -20,14 +20,14 @@ const Booking = () => {
     useEffect(() => {
         axios
 
-            .get("http://localhost:5000/allResorts")
+            .get("https://polar-sea-22430.herokuapp.com/allResorts")
             .then((result) => {
                 setResorts(result.data);
             });
     }, []);
 
     useEffect(() => {
-        const matched = resorts.find((d) => d._id == id);
+        const matched = resorts.find((d) => d._id === id);
         setMatchedData(matched);
     }, [id, resorts]);
 
@@ -35,7 +35,7 @@ const Booking = () => {
     const onSubmit = (data) => {
         data.email = user.email;
         axios
-            .post("http://localhost:5000/addBookings", data)
+            .post("https://polar-sea-22430.herokuapp.com/addBookings", data)
             .then((result) => {
                 if (result.data.insertedId) {
                     alert("Successfully Booking Added");
