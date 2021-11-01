@@ -13,18 +13,18 @@
     width: 60%;
     margin-top: 15px;
     padding: 3px 10px;
-    border-bottom: 2px solid #ffa500 !important;
+    border-bottom: 2px solid #1e0447 !important;
     height: 45px;
   }
   .add-resort-container form textarea {
-    border-bottom: 2px solid #ffa500 !important;
+    border-bottom: 2px solid #19023d !important;
   }
   .field:focus {
     box-shadow: none !important;
     outline: 0 !important;
   }
   .add-resort-container form :nth-child(6) {
-    background-color: #ffa500;
+    background-color: #200650;
     color: #fff;
   }
   

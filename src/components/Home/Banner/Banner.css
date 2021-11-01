@@ -30,8 +30,8 @@
   box-shadow: none !important;
 }
 .btn-one {
-  background-color: #ffa500 !important;
-  border: 1.8px solid #ffa500 !important;
+  background-color: #080663 !important;
+  border: 1.8px solid #160552 !important;
   margin-right: 10px !important;
   color: rgb(251, 255, 255) !important;
 }
@@ -41,12 +41,12 @@
 }
 
 .btn-two {
-  border: 1.8px solid #ffa500 !important;
+  border: 1.8px solid #18045e !important;
   background-color: #5c6161b4 !important;
   margin-left: 10px !important;
 }
 .btn-two:hover {
-  background-color: #ffa500 !important;
+  background-color: #14054b !important;
   transition: 0.5s;
 }
 
