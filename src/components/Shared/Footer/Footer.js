@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { Col, Row } from "react-bootstrap";
-import { FaHotel } from "react-icons/fa";
+import { FaTripadvisor } from "react-icons/fa";
 import { CgFacebook, CgInstagram, CgTwitter, CgYoutube } from "react-icons/cg";
 // import { HashLink } from "react-router-hash-link";
 
@@ -14,7 +14,7 @@ const Footer = () => {
                         <h2 className="text-warning">
                             <span>
                                 {" "}
-                                <FaHotel />{" "}
+                                <FaTripadvisor />{" "}
                             </span>{" "}
                             Tourist Center{" "}
                         </h2>

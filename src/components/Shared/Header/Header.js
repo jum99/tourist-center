@@ -4,7 +4,7 @@ import { Nav, Navbar, Button } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import { BiUserCircle } from "react-icons/bi";
 import useAuth from "../../../hooks/useAuth";
-import { FaHotel } from "react-icons/fa";
+import { FaTripadvisor } from "react-icons/fa";
 const Header = () => {
     const { user, handleUserLogOut } = useAuth();
     return (
@@ -14,7 +14,7 @@ const Header = () => {
                     <h2 className="d-inline-block logo-color mt-1 fw-bold text-warning">
                         <span>
                             {" "}
-                            <FaHotel />{" "}
+                            <FaTripadvisor />{" "}
                         </span>{" "}
                         Tourist Center{" "}
                     </h2>
