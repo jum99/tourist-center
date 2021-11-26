@@ -2,7 +2,6 @@ import React from "react";
 import "./Footer.css";
 import { Col, Row } from "react-bootstrap";
 import { FaHotel } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { CgFacebook, CgInstagram, CgTwitter, CgYoutube } from "react-icons/cg";
 // import { HashLink } from "react-router-hash-link";
 

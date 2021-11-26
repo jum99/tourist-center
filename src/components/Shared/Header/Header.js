@@ -11,7 +11,7 @@ const Header = () => {
         <div className=" nav-container container-fluid ">
             <Navbar className="  container" expand="lg">
                 <Navbar.Brand>
-                    <h2 className="d-inline-block logo-color mt-1 fw-bold">
+                    <h2 className="d-inline-block logo-color mt-1 fw-bold text-warning">
                         <span>
                             {" "}
                             <FaHotel />{" "}

@@ -13,7 +13,7 @@
     margin-top: 20px;
   }
   li:hover {
-    color: #ffa500;
+    color: #490e36;
   }
   .footerIcon {
     font-size: 1.2em;
@@ -52,7 +52,7 @@
     color: rgb(228, 217, 217);
   }
   .footerLink:hover {
-    color: #ffa500;
+    color: #490e36;
   }
   .footer-list > li {
     transition: 0.5s;
