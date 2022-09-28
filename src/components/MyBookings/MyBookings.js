@@ -55,7 +55,7 @@ const MyBookings = () => {
                             <td>{BR?.date}</td>
                             <td>{BR?.BookingCode}</td>
                             <td>
-                                <Button onClick={() => handleRemove(BR._id)}> Remove </Button>
+                                <Button style={{ backgroundColor: 'mediumseagreen', border: 'none' }} onClick={() => handleRemove(BR._id)}> Remove </Button>
                             </td>
                         </tr>
                     ))}

@@ -7,7 +7,7 @@ const Subscription = () => {
             <div className="text-center w-75">
                 <h5 className="top-sub-text">JOIN WITH US</h5>
                 <h1 className="news-text">Please Sign Up</h1>
-                <p className="text-light">Sign Up To Know Our Latest News And Special Offers</p>
+                <p style={{ color: 'mediumseagreen' }} className="text-center fst-italic ps-3 text-secondary mb-5">Sign Up To Know Our Latest News And Special Offers</p>
 
                 <InputGroup className="mb-3">
                     <FormControl
@@ -15,7 +15,7 @@ const Subscription = () => {
                         aria-label="Add Your Email Address"
                         aria-describedby="basic-addon2"
                     />
-                    <Button variant="outline-warning" id="button-addon2">
+                    <Button style={{ backgroundColor: 'mediumseagreen' }}>
                         Button
                     </Button>
                 </InputGroup>

@@ -55,7 +55,7 @@ const ManageAllBookings = () => {
                             <td>{BR?.BookingCode}</td>
                             <td>
                                 <Button
-                                    variant="warning"
+                                    style={{ backgroundColor: 'mediumseagreen', border: "none" }}
                                     className="text-white"
                                     onClick={() => handleRemove(BR._id)}
                                 >

@@ -10,19 +10,19 @@ const Contact = () => {
                 <Col className="">
                     <div className=" p-3 rounded-3  contact-div">
                         <h4>POSTAL ADDRESS</h4>
-                        <p>204 Hamton Road, UK</p>
+                        <p>Zindabazar 3107, Sylhet</p>
                     </div>
                 </Col>
                 <Col>
                     <div className=" p-3 rounded-3  contact-div">
-                        <h4> Weekly Trip</h4>
+                        <h4>Weekly Trip</h4>
                         <p>Support Number:</p>
-                        <h6>(809) 0876 964</h6>
+                        <h6>+880 0876 964</h6>
                     </div>
                 </Col>
                 <Col>
                     <div className=" p-3 rounded-3  contact-div">
-                        <h4> NAVIGATORS</h4>
+                        <h4>NAVIGATORS</h4>
                         <p>
                             For help with support or getting in touch with our team, contact
                             our tour navigators.
@@ -32,17 +32,17 @@ const Contact = () => {
                 </Col>
                 <Col>
                     <div className=" p-3 rounded-3  contact-div">
-                        <h4> URGENT BOOKING</h4>
+                        <h4>URGENT BOOKING</h4>
                         <p>Call here:</p>
-                        <h6>(099) 8865 6670</h6>
+                        <h6>+880 8865 6670</h6>
                     </div>
                 </Col>
                 <Col>
                     <div className=" p-3 rounded-3 contact-div">
-                        <h4> REFERRALS</h4>
+                        <h4>REFERRALS</h4>
                         <p>Business hours: Mon-Fri</p>
-                        <h6>travelsociety@info.org</h6>
-                        <h6>Phone:(035) 0098 1187</h6>
+                        <h6>tourist.center@info.org</h6>
+                        <h6>Phone:+880 0098 1187</h6>
                     </div>
                 </Col>
 
@@ -51,8 +51,8 @@ const Contact = () => {
                         <h4>SUPPORT OUR WORK</h4>
                         <p>Children Care Foundation</p>
                         <h6>Childrenfoundation@care.org</h6>
-                        <h6> Phone: (077) 4434 5106</h6>
-                        <h6> Toll Free: (008) 6608 9730</h6>
+                        <h6>Phone: +880 334 5106</h6>
+                        <h6>Toll Free: +880 608 9730</h6>
                     </div>
                 </Col>
             </Row>

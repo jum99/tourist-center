@@ -5,11 +5,11 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import "./Booking.css";
 import useAuth from "../../hooks/useAuth";
+
 const Booking = () => {
     const { user } = useAuth();
     const { id } = useParams();
     const [resorts, setResorts] = useState([]);
-    //   const [singleData, setSingleData] = useState([]);
     const [matchedData, setMatchedData] = useState({});
     const {
         register,
@@ -29,6 +29,7 @@ const Booking = () => {
     useEffect(() => {
         const matched = resorts.find((d) => d._id === id);
         setMatchedData(matched);
+        console.log(matched);
     }, [id, resorts]);
 
     console.log(user.email);
@@ -38,7 +39,7 @@ const Booking = () => {
             .post("https://polar-sea-22430.herokuapp.com/addBookings", data)
             .then((result) => {
                 if (result.data.insertedId) {
-                    alert("Successfully Booking Added");
+                    alert("Successfully Booked");
                     reset();
                 }
             });
@@ -51,10 +52,9 @@ const Booking = () => {
                         <img className="img-fluid" src={matchedData?.image} alt="" />
                     </div>
                     <div>
-                        <h2 className="text-warning my-3">{matchedData?.name}</h2>
+                        <h2 style={{ color: 'mediumseagreen' }} className="my-3">{matchedData?.name}</h2>
                         <h4>
-                            Booking Code :{" "}
-                            <span className="text-warning"> {matchedData?.bookingCode}</span>{" "}
+                            Booking Code : {matchedData?._id}
                         </h4>
                         <p className="text-secondary booking-desc mt-3">
                             {matchedData?.description}
@@ -63,21 +63,21 @@ const Booking = () => {
                 </Col>
                 <Col md={6} className="border-start border-2 ">
                     <div className="add-booking-container">
-                        <h2 className="text-center text-warning"> Explore Resort Hotels</h2>
+                        <h2
+                            style={{ color: 'mediumseagreen' }} className="text-center">Book Resort</h2>
                         <form
                             onSubmit={handleSubmit(onSubmit)}
                             className="mt-3 form-wrapper"
                         >
                             <input
                                 {...register("name", { required: true })}
-                                placeholder=" your name"
+                                placeholder="Your Name"
                                 className="border-0 field"
                             />
 
                             <input
-                                type="number"
-                                {...register("email", { required: true })}
-                                placeholder=" your phone number "
+                                {...register("number", { required: true })}
+                                placeholder="Your Phone Number"
                                 className="border-0 field"
                             />
                             <input
@@ -86,14 +86,14 @@ const Booking = () => {
                                 {...register("date", { required: true })}
                             />
 
-                            <input
+                            <input defaultValue={matchedData?.name}
                                 {...register("resort", { required: true })}
-                                placeholder=" add resort name"
+                                placeholder="Add Resort Name"
                                 className="border-0 field"
                             />
-                            <input
+                            <input defaultValue={matchedData?._id}
                                 {...register("BookingCode", { required: true })}
-                                placeholder="add booking code"
+                                placeholder="Add Booking Code"
                                 className="border-0 field"
                             />
                             {errors.exampleRequired && <span>This field is required</span>}

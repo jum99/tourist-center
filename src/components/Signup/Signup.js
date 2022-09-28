@@ -106,7 +106,7 @@ const Signup = () => {
                     />
                 </Form.Group>
                 <div className="mb-3 mt-4 text-danger">{error}</div>
-                <Button className="loginBtn  mt-4 mb-4" variant="info" type="submit">
+                <Button className="loginBtn mt-4 mb-4" type="submit">
                     Sign up
                 </Button>
                 <hr />

@@ -1,17 +1,19 @@
 .subscription-container {
-    width: 100%;
-    height: 70vh;
-    /* background: red; */
-     background-color: rgb(30, 12, 94);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  .top-sub-text {
-    color: whitesmoke;
-  }
-  .news-text {
-    font-size: 4em;
-    color: whitesmoke;
-  }
-  
+  width: 100%;
+  height: 70vh;
+  /* background: red; */
+  /* background-color: rgb(30, 12, 94); */
+  background-color: rgba(60, 179, 114, 0.11);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.top-sub-text {
+  color: mediumseagreen;
+}
+
+.news-text {
+  font-size: 4em;
+  color: mediumseagreen;
+}

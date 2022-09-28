@@ -1,68 +1,54 @@
 import React from "react";
-import "./Footer.css";
-import { Col, Row } from "react-bootstrap";
-import { FaTripadvisor } from "react-icons/fa";
-import { CgFacebook, CgInstagram, CgTwitter, CgYoutube } from "react-icons/cg";
-// import { HashLink } from "react-router-hash-link";
+import { FaBuilding, FaMapMarker, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="pt-5  mt-5">
-            <Row xs={1} md={2} lg={4} className="upperFooterDiv px-5 ">
-                <Col className="mt-3">
-                    <div>
-                        <h2 className="text-warning">
-                            <span>
-                                {" "}
-                                <FaTripadvisor />{" "}
-                            </span>{" "}
-                            Tourist Center{" "}
-                        </h2>
-                    </div>
 
-                </Col>
-                <Col>
-                    <ul className="footer-list ul-p">
-                        <li>+01888888888888</li>
-                        <li>+0199999999999</li>
-                        <li>info@tourcenter.com</li>
-                        <li>hello@tourcenter.com</li>
-                        <li>Hamton Road, UK</li>
-                    </ul>
-                </Col>
-            </Row>
-            <div className="text-center my-5">
-                <div className="d-inline-block">
-                    {" "}
-                    <div className="d-flex">
-                        <div className="iconDiv">
-                            <h2 className="footerIcon">
-                                <CgFacebook />
-                            </h2>
-                        </div>
-                        <div className="iconDiv">
-                            <h2 className="footerIcon">
-                                <CgTwitter />
-                            </h2>
-                        </div>
-                        <div className="iconDiv">
-                            <h2 className="footerIcon">
-                                <CgYoutube />
-                            </h2>
-                        </div>
-                        <div className="iconDiv">
-                            <h2 className="footerIcon">
-                                <CgInstagram />
-                            </h2>
-                        </div>{" "}
-                    </div>
+        <div className="p-5 m-5">
+
+            <div className="row row-cols-md-4 row-cols-lg-4 row-cols-sm-2 d-flex justify-content-around">
+                <div className="col-6">
+
+
+                    <h2 style={{ color: 'mediumseagreen' }} className='fw-bold mt-1'>
+                        <span>
+                            {" "}
+                            <FaBuilding />{" "}
+                        </span>{" "}
+                        Tourist Center{" "}
+                    </h2>
+
+                    <p>Copyright &copy; 2021 | All Rigts Reserved. </p>
                 </div>
+
+                <div className="col-6">
+
+                    <h3 style={{ color: 'mediumseagreen' }}>Contact And Location</h3> <br />
+
+                    <h6><span style={{ color: 'mediumseagreen', marginRight: '3px' }}>< FaPhoneAlt /> </span> +880-888-88888</h6>
+                    <p> <span style={{ color: 'mediumseagreen', marginRight: '5px' }}> <FaMapMarker /> </span>City Complex 3rd floor, Zindabazar, Sylhet.</p>
+
+                </div>
+                <div className="col-6">
+
+                    <h3 style={{ color: 'mediumseagreen' }}>Support</h3> <br />
+                    <h6>Tour Guides</h6>
+                    <h6>Customer Support</h6>
+                    <h6>Terms And Conditions</h6>
+
+
+                </div>
+                <div className="col-6">
+
+                    <h3 style={{ color: 'mediumseagreen' }}>About Us</h3> <br />
+                    <h6>Travel Blogs</h6>
+                    <h6>Our Clients</h6>
+                    <h6>Legal Notice</h6>
+
+                </div>
+
             </div>
-            <div className="lowerFooterDiv mt-4">
-                <p className="text-center text-white">
-                    <small>Copyright @2021. All Rights Reserved By Tourist Center</small>
-                </p>
-            </div>
+
         </div>
     );
 };

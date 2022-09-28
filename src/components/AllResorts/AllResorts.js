@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Table, Button } from "react-bootstrap";
 import { MdDelete } from "react-icons/md";
+
 const AllResorts = () => {
     const [bookedResort, setBookedResort] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -49,7 +50,7 @@ const AllResorts = () => {
                             <td>{BR?.name}</td>
                             <td>
                                 <Button
-                                    variant="warning"
+                                    style={{ backgroundColor: 'mediumseagreen', border: '1px solid mediumseagreen' }}
                                     className="text-white"
                                     onClick={() => handleRemove(BR._id)}
                                 >

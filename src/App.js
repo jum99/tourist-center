@@ -7,7 +7,6 @@ import Contact from "./components/Contact/Contact";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import NotFound from "./components/NotFound/NotFound";
-import Footer from "./components/Shared/Footer/Footer";
 import AddANewService from "./components/AddANewService/AddANewService";
 import Admin from "./components/Admin/Admin";
 import MyBookings from "./components/MyBookings/MyBookings";
@@ -79,7 +78,6 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
-        <Footer></Footer>
       </BrowserRouter>
     </AuthProvider>
 

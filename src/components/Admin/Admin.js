@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
-// import AddANewService from "../AddANewService/AddANewService";
 import ManageAllBookings from "../ManageAllBookings/ManageAllBookings";
 import "./Admin.css";
 import { RiAddCircleLine } from "react-icons/ri";
@@ -8,15 +7,19 @@ import { MdManageSearch } from "react-icons/md";
 import { FaHotel } from "react-icons/fa";
 import AllResorts from "../AllResorts/AllResorts";
 import AddANewService from "../AddANewService/AddANewService";
+
 const Admin = () => {
+
     const [isActive, setIsActive] = useState("addService");
+
     return (
         <div className="">
             <Row className="w-100 mt-5">
                 <Col md={3} className="  ps-5 border-end border-2">
                     <ul className="admin-ul ps-0">
                         <li>
-                            <h4 className="mt-2 text-warning border-bottom border-2 border-dark ">
+                            <h4
+                                style={{ color: 'mediumseagreen' }} className="mt-2 border-bottom border-2 border-dark ">
                                 Admin DashBoard
                             </h4>
                         </li>

@@ -35,9 +35,9 @@ const Management = () => {
 
     return (
         <div id="chefs" className="container chefs-main-Container">
-            <h1 className="text-center">Our Management</h1>
-            <p className="text-center mt-4">
-                Our management team is dedicated to give you support. Call us if you wanna go on a trip. W e give reliable services in your budget.
+            <h1 className="text-center" style={{ color: 'mediumseagreen' }}>Our Management</h1>
+            <p className="text-center mt-4 fst-italic ps-3 text-secondary mb-3">
+                Our management team is dedicated to give you support
             </p>
             <Row className="w-100">
                 {chefs.map((chef) => (

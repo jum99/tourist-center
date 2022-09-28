@@ -1,14 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row, Button, Card } from "react-bootstrap";
-// import useAuth from "../../hooks/useAuth";
 import { BsFillBookmarkFill } from "react-icons/bs";
 
 import "./Resorts.css";
 import { Link } from "react-router-dom";
 const Resorts = () => {
     const [resorts, setResorts] = useState([]);
-    // const { user } = useAuth();
 
     useEffect(() => {
         axios
@@ -20,14 +18,14 @@ const Resorts = () => {
     }, []);
 
     return (
-        <div className="events-container mb-5">
+        <div className="events-container mt-5 mb-5">
             <Container className="w-100">
-                <h1 className=" text-uppercase fw-bold ps-3">
-                    Popular <span className="text-warning">Resort</span> Hotels{" "}
+                <h1 className="text-center text-uppercase fw-bold ps-3 mb-2">
+                    Popular <span style={{ color: 'mediumseagreen' }}>Resort</span> Hotels{" "}
                 </h1>
-                <h2 className="ps-3 text-secondary">
-                    Find your favourite resort hotel here.
-                </h2>
+                <h6 className="text-center fst-italic ps-3 text-secondary mb-5">
+                    Find your favourite resort hotel here
+                </h6>
 
                 <Row className="g-5 w-100 ps-4">
                     {resorts.map((resort) => (
@@ -67,7 +65,6 @@ const Resorts = () => {
                                         </Card.Body>
                                         <Card.Footer className="bg-transparent border-0">
                                             <Button
-                                                //   onClick={() => handleJoinEvent(event._id)}
                                                 className="book-btn-style border-0"
                                             >
                                                 <Link

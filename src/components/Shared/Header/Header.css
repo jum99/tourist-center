@@ -1,15 +1,22 @@
-.loginText {
-    transition: 0.4s;
-  }
-  .loginStyle:hover {
-    background-color: orange !important;
-    transition: 0.4s;
-  }
-  .loginStyle:hover .loginText {
-    color: #fff !important;
-    transition: 0.4s;
-  }
-  .sign-btn {
-    background-color: #ffa500 !important;
-  }
-  
+.header-bg {
+  padding: 15px;
+}
+
+.menuText {
+  font-size: 24px;
+  font-weight: bold;
+  color: mediumseagreen !important;
+}
+
+.sign-btn {
+  background-color: mediumseagreen !important;
+  border: 1px solid mediumseagreen;
+  color: white;
+  padding: 5px 25px;
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+.sign-btn:hover {
+  border: 1px solid mediumseagreen;
+}
