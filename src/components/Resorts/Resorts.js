@@ -10,7 +10,7 @@ const Resorts = () => {
 
     useEffect(() => {
         axios
-            .get("https://polar-sea-22430.herokuapp.com/allResorts")
+            .get("https://tourist-center-server.up.railway.app/allResorts")
             .then((result) => {
                 const data = result.data;
                 setResorts(data);
@@ -21,10 +21,10 @@ const Resorts = () => {
         <div className="events-container mt-5 mb-5">
             <Container className="w-100">
                 <h1 className="text-center text-uppercase fw-bold ps-3 mb-2">
-                    Popular <span style={{ color: 'mediumseagreen' }}>Resort</span> Hotels{" "}
+                    Popular <span style={{ color: 'mediumseagreen' }}>Resorts</span>
                 </h1>
                 <h6 className="text-center fst-italic ps-3 text-secondary mb-5">
-                    Find your favourite resort hotel here
+                    Find your favourite resorts here
                 </h6>
 
                 <Row className="g-5 w-100 ps-4">

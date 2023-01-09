@@ -20,7 +20,7 @@ const Booking = () => {
     useEffect(() => {
         axios
 
-            .get("https://polar-sea-22430.herokuapp.com/allResorts")
+            .get("https://tourist-center-server.up.railway.app/allResorts")
             .then((result) => {
                 setResorts(result.data);
             });
@@ -36,7 +36,7 @@ const Booking = () => {
     const onSubmit = (data) => {
         data.email = user.email;
         axios
-            .post("https://polar-sea-22430.herokuapp.com/addBookings", data)
+            .post("https://tourist-center-server.up.railway.app/addBookings", data)
             .then((result) => {
                 if (result.data.insertedId) {
                     alert("Successfully Booked");

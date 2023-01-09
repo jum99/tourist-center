@@ -8,7 +8,7 @@ const AllResorts = () => {
     const [isLoading, setIsLoading] = useState(false);
     useEffect(() => {
         axios
-            .get("https://polar-sea-22430.herokuapp.com/allResorts")
+            .get("https://tourist-center-server.up.railway.app/allResorts")
             .then((result) => {
                 console.log(result.data);
                 setBookedResort(result.data);
@@ -22,7 +22,7 @@ const AllResorts = () => {
         if (proceed) {
             axios
                 .delete(
-                    `https://polar-sea-22430.herokuapp.com/${id}`
+                    `https://tourist-center-server.up.railway.app/${id}`
                 )
                 .then((result) => {
                     console.log(result);

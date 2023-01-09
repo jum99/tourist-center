@@ -7,7 +7,7 @@ const ManageAllBookings = () => {
     const [isLoading, setIsLoading] = useState(false);
     useEffect(() => {
         axios
-            .get("https://polar-sea-22430.herokuapp.com/manageAllBookings")
+            .get("https://tourist-center-server.up.railway.app/manageAllBookings")
             .then((result) => {
                 console.log(result.data);
                 setBookedResort(result.data);
@@ -21,7 +21,7 @@ const ManageAllBookings = () => {
         if (proceed) {
             axios
                 .delete(
-                    `https://polar-sea-22430.herokuapp.com/deleteBooking/${id}`
+                    `https://tourist-center-server.up.railway.app/deleteBooking/${id}`
                 )
                 .then((result) => {
                     console.log(result);

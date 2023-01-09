@@ -23,7 +23,7 @@ const Header = () => {
                     </h2>
                 </Navbar.Brand>
 
-                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Toggle style={{ backgroundColor: "mediumseagreen" }} aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
                         className="ms-auto my-2 my-lg-0 d-flex align-items-center pt-1"

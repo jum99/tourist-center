@@ -12,7 +12,7 @@ const AddANewService = () => {
     } = useForm();
     const onSubmit = (data) => {
         axios
-            .post("https://polar-sea-22430.herokuapp.com/addResorts", data)
+            .post("https://tourist-center-server.up.railway.app/addResorts", data)
             .then((result) => {
                 if (result.data.insertedId) {
                     alert("Successfully Added");
